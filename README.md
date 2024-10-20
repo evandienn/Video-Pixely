@@ -38,22 +38,17 @@ We surely built on the work of others! Here are resources and people we got supp
 
 ## Product Pitch
 
-Replace this with a pitch for your project and the problem it solves. This is your vision for what the project
-would like like as a complete product, ready for awesome action. (Yes, awesomeness seems to be a theme.)
-It may be as short as a couple of paragraphs, or it may be longer. It should **definitely** take less than 4 minutes
-to read carefully and thoroughly.
+**Pixel Inspiration: Unleash Your Creativity in Pixels**
 
-Be sure that this touches clearly on the [project requirements](https://steven-wolfman.github.io/cpsc-312-website-2024W1/project.html#project-requirements).
+In a world where perspectives shape creativity, why not explore a new way of seeing things? **Pixel Inspiration** offers a creative tool that transforms your videos into stunning pixel art animations, each with its own unique style, color palette, and dynamic motion. Whether you want to evoke nostalgia or add a retro touch to your content, our platform empowers users to craft personal, artistic interpretations of their favorite videos.
 
-Good goals to aim for are from the top two rubric items for proposal grading:
+But we’re not stopping at individual creation. Pixel Inspiration taps into the power of Haskell, providing the community with a fresh opportunity to blend art with functional programming. 
 
-> Exciting and language-appropriate product idea tackling a problem that is clearly compelling to a significant audience.
+By using our tool, Haskell developers can easily incorporate pixel art into their own projects, be it for a creative touch on personal websites or engaging animations in discussions and forums.
 
-Or:
+Imagine Haskell-powered websites where user avatars or banners can come alive with pixelated animations, creating more dynamic and visually appealing interfaces.
 
-> Solid and language-appropriate product idea with a problem that is of real interest to the submitting team.
-
-(It's easy to focus on the product and not the problem. Remember to include both!)
+With **Pixel Inspiration**, we’re blending the world of art and code to offer a new perspective. Join us in transforming how we experience video content—pixel by pixel!
 
 ## Minimal Viable Project
 
