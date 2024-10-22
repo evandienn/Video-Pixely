@@ -63,34 +63,33 @@ JuicyPixels: For image processing tasks, such as accessing and manipulating pixe
 haskell-opencv: For advanced image and video processing functionalities, including webcam integration for real-time video capture.
 By leveraging these libraries, we can focus on the transformation logic while relying on well-tested tools for low-level multimedia handling. Haskell's purity and strong typing ensure that our transformations are reliable and maintainable.
 
-Learning and Applying New Elements of Haskell:
+Learning and Applying Advanced Haskell Concepts
+This project will help us explore and use advanced Haskell concepts and libraries beyond what we've learned in class.
 
-This project naturally leads us to explore and apply advanced Haskell concepts and libraries beyond our current coursework:
+Advanced Image Processing Techniques
+What we’ll learn: How to implement image processing algorithms like pixelation, color quantization, and edge detection.
+Application: We’ll apply these techniques to turn video frames into pixel art.
 
-Advanced Image Processing Techniques:
+Foreign Function Interface (FFI)
+What we’ll learn: How to connect Haskell with C libraries for additional functionality.
+Application: We’ll use FFI to work with libraries like FFmpeg and OpenCV for video decoding and webcam access.
 
-What we'll learn: How to implement image processing algorithms in Haskell, such as pixelation effects, color quantization, and edge detection.
-Application in the project: We'll apply these algorithms to transform video frames into pixel art, learning how to manipulate images at the pixel level.
-Foreign Function Interface (FFI):
+Parallel and Concurrent Processing
+What we’ll learn: Techniques for processing data concurrently using Haskell’s built-in tools.
+Application: We’ll process multiple video frames at the same time to improve performance.
 
-What we'll learn: How to interface Haskell with C libraries to utilize functionalities not natively available in Haskell.
-Application in the project: We'll use FFI to interact with multimedia libraries like FFmpeg and OpenCV, enabling video decoding and webcam access.
-Parallel and Concurrent Processing:
+Custom Data Types and Typeclasses
+What we’ll learn: How to create custom data types for clearer and safer code.
+Application: We’ll define types for frames, pixels, and transformation parameters to enhance type safety.
 
-What we'll learn: Techniques to process data concurrently using Haskell's concurrency primitives and libraries like async or parallel.
-Application in the project: We'll implement parallel processing of video frames to improve performance, handling multiple frames simultaneously.
-Custom Data Types and Typeclasses:
+Monad Transformers and Advanced Monadic Patterns
+What we’ll learn: How to combine different effects like state management and I/O using monad transformers.
+Application: We’ll manage complex tasks that involve state changes and I/O, making our code more modular.
 
-What we'll learn: Designing custom data types and leveraging Haskell's type system to create more expressive and safer code.
-Application in the project: We'll define types for representing frames, pixels, and transformation parameters, ensuring type safety and clarity in our transformations.
-Monad Transformers and Advanced Monadic Patterns:
+Optimization and Performance Tuning
+What we’ll learn: Techniques for making Haskell programs run faster, like using strictness annotations and profiling tools.
+Application: We’ll optimize parts of our code for image processing to ensure smooth playback of videos.
 
-What we'll learn: How to use monad transformers to combine multiple effects, such as state management, I/O, and error handling.
-Application in the project: We'll manage complex computations that involve stateful transformations and I/O operations, enhancing our code's modularity and readability.
-Optimization and Performance Tuning:
-
-What we'll learn: Techniques for optimizing Haskell programs, such as strictness annotations, unboxed types, and profiling tools.
-Application in the project: We'll optimize computationally intensive parts of our code, such as image transformations and data processing loops, to ensure smooth video playback.
 
 
 ## Proof of Concept
