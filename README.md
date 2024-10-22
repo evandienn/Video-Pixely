@@ -135,21 +135,27 @@ Testing this proof-of-concept reassures us that the basic image transformation f
 How to Test and Run the Code: Haskell
 Clone the repository and navigate to the Haskell subdirectory:
 
+```bash
 cd haskell
+```
 
 Build the project using stack:
 
+```bash
 stack build
+```
 
 This will download all necessary dependencies and compile the project. Please be patient as it might take some time to complete.
 
 
 After the project is built, to run the image processor, input this line in the terminal:
+```bash
 stack exec image-processor
-
+```
 And then it will ask for a user input of the file name. You can use the existing images in the images folder of the project, or you can place your own images that you want to test into the images folder. 
 
 For example, you can input something like 
+```bash
 images/bird.png
-
+```
 The output image will be stored as output.png in the output_images folder. You can check and see if the output image is indeed a full black image will the same dimensions as the input image. 
