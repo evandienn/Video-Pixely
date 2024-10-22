@@ -10,7 +10,7 @@ This project is in fulfillment of the [CPSC 312 2024W1 project requirements](htt
 
 Our team is:
 
-+ Team Member Name 1 (student # 1): optional awesome nickname 1
++ Yasser Sanobar (student # 1): Burger 1
 + Evan Dien   (student # 2): EP 2
 + Tony Huang  (student # 3): HY 3
 + If you have a fourth member: Team Member Name 4 (student # 4): optional awesome nickname 4
@@ -46,22 +46,52 @@ With **Pixel Inspiration**, we’re blending the world of art and code to offer 
 
 ## Minimal Viable Project
 
-Replace this with a description of the minimal viable project you will actually build for CPSC 312 (if this becomes your final project).
-It may be as short as a few paragraphs, or it may be longer. It should **definitely** take less than 4 minutes
-to read carefully and thoroughly.
+Our MVP is a Haskell application that transforms a short video clip (approximately 5 seconds) into a pixel art animation, resembling a cartoon-like style. Users will have the option to either upload an existing video file or record a new 5-second video using their webcam directly through the application. The program processes the video frame by frame, reducing the resolution and applying pixel art effects to create a stylized, low-resolution animation that captures the essence of the original video in a retro, pixelated form.
 
-Make clear:
-+ how this builds meaningfully toward your product pitch above, without being nearly as much work,
-+ how it builds on the strength and power of the language, and
-+ how it leads naturally to learning and applying some new element of the language (including what that element is!)
+Building Toward the Product Pitch:
 
-Good goals to aim for are from the top two rubric items for proposal grading:
+This MVP meaningfully advances our product pitch by implementing the core functionality of video-to-pixel art conversion. By focusing on short videos, we manage the project's complexity while tackling essential challenges such as video decoding, frame extraction, and image transformation into pixel art. This approach lays a solid foundation for future enhancements, such as processing longer videos, offering various artistic styles, or integrating more sophisticated effects.
 
-> The minimal viable project (MVP) builds on the strengths and power of the language in exciting ways that will clearly lead to excellent learning for students.
+Leveraging Haskell's Strengths:
 
-Or:
+The project capitalizes on Haskell's powerful functional programming paradigm and strong type system, which are ideal for complex data transformations required in video processing and image manipulation. Haskell's efficient handling of lists, higher-order functions, and recursion facilitates the processing of pixel data across multiple frames.
 
-> The MVP clearly builds significantly on the language and will lead in interesting and natural ways to learning for the students.
+We plan to utilize specialized libraries to handle multimedia data effectively:
+
+ffmpeg-light or haskell-ffmpeg: For video decoding and frame extraction, allowing us to process various video formats within Haskell.
+JuicyPixels: For image processing tasks, such as accessing and manipulating pixel data from each frame.
+haskell-opencv: For advanced image and video processing functionalities, including webcam integration for real-time video capture.
+By leveraging these libraries, we can focus on the transformation logic while relying on well-tested tools for low-level multimedia handling. Haskell's purity and strong typing ensure that our transformations are reliable and maintainable.
+
+Learning and Applying New Elements of Haskell:
+
+This project naturally leads us to explore and apply advanced Haskell concepts and libraries beyond our current coursework:
+
+Advanced Image Processing Techniques:
+
+What we'll learn: How to implement image processing algorithms in Haskell, such as pixelation effects, color quantization, and edge detection.
+Application in the project: We'll apply these algorithms to transform video frames into pixel art, learning how to manipulate images at the pixel level.
+Foreign Function Interface (FFI):
+
+What we'll learn: How to interface Haskell with C libraries to utilize functionalities not natively available in Haskell.
+Application in the project: We'll use FFI to interact with multimedia libraries like FFmpeg and OpenCV, enabling video decoding and webcam access.
+Parallel and Concurrent Processing:
+
+What we'll learn: Techniques to process data concurrently using Haskell's concurrency primitives and libraries like async or parallel.
+Application in the project: We'll implement parallel processing of video frames to improve performance, handling multiple frames simultaneously.
+Custom Data Types and Typeclasses:
+
+What we'll learn: Designing custom data types and leveraging Haskell's type system to create more expressive and safer code.
+Application in the project: We'll define types for representing frames, pixels, and transformation parameters, ensuring type safety and clarity in our transformations.
+Monad Transformers and Advanced Monadic Patterns:
+
+What we'll learn: How to use monad transformers to combine multiple effects, such as state management, I/O, and error handling.
+Application in the project: We'll manage complex computations that involve stateful transformations and I/O operations, enhancing our code's modularity and readability.
+Optimization and Performance Tuning:
+
+What we'll learn: Techniques for optimizing Haskell programs, such as strictness annotations, unboxed types, and profiling tools.
+Application in the project: We'll optimize computationally intensive parts of our code, such as image transformations and data processing loops, to ensure smooth video playback.
+
 
 ## Proof of Concept
 
