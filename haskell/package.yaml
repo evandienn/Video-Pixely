@@ -1,33 +1,20 @@
-# TODO: Replace `my-project` everywhere in this file with your project name.
-name:                my-project
-version:             0.1.0.0
-
+name: haskell
+version: 0.1.0.0
 dependencies:
-- base
+  - base >= 4.7 && < 5
+  - JuicyPixels       # For image processing
+  - hlint             
+  - stylish-haskell   
 
 library:
   source-dirs: src
+  exposed-modules:
+    - Lib             # The module in src/Lib.hs
 
 executables:
-  my-project-exe:
-    main:                Main.hs
-    source-dirs:         app
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+  image-processor:
+    main: Main.hs
+    source-dirs: app
     dependencies:
-    - my-project
+      - haskell
 
-tests:
-  my-project-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - my-project
-    - tasty
-    - tasty-hunit
