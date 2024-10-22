@@ -13,7 +13,7 @@ Our team is:
 + Yasser Sanobar (student # 1): Burger 1
 + Evan Dien   (student # 2): EP 2
 + Tony Huang  (student # 3): HY 3
-+ If you have a fourth member: Team Member Name 4 (student # 4): optional awesome nickname 4
++ Aric Chan (student # 55019376) Meowee 4
 
 We call ourselves: Burger Pixelizers.
 
@@ -32,9 +32,9 @@ ChatGPT: We used ChatGPT to generate ideas, structure documentation, and get fee
 
 ## Product Pitch
 
-**Pixel Inspiration: Unleash Your Creativity in Pixels**
+**Video Pixely: Unleash Your Creativity in Pixels**
 
-In a world where perspectives shape creativity, why not explore a new way of seeing things? **Pixel Inspiration** offers a creative tool that transforms your videos into stunning pixel art animations, each with its own unique style, color palette, and dynamic motion. Whether you want to evoke nostalgia or add a retro touch to your content, our platform empowers users to craft personal, artistic interpretations of their favorite videos.
+In a world where perspectives shape creativity, why not explore a new way of seeing things? **Video Pixely** offers a creative tool that transforms your videos into stunning pixel art animations, each with its own unique style, color palette, and dynamic motion. Whether you want to evoke nostalgia or add a retro touch to your content, our platform empowers users to craft personal, artistic interpretations of their favorite videos.
 
 But we’re not stopping at individual creation. Pixel Inspiration taps into the power of Haskell, providing the community with a fresh opportunity to blend art with functional programming. 
 
@@ -42,7 +42,7 @@ By using our tool, Haskell developers can easily incorporate pixel art into thei
 
 Imagine Haskell-powered websites where user avatars or banners can come alive with pixelated animations, creating more dynamic and visually appealing interfaces.
 
-With **Pixel Inspiration**, we’re blending the world of art and code to offer a new perspective. Join us in transforming how we experience video content—pixel by pixel!
+With **Video Pixely**, we’re blending the world of art and code to offer a new perspective. Join us in transforming how we experience video content—pixel by pixel!
 
 ## Minimal Viable Project
 
