@@ -13,7 +13,7 @@ Our team is:
 + Yasser Sanobar (student # 1): Burger 1
 + Evan Dien   (student # 2): EP 2
 + Tony Huang  (student # 3): HY 3
-+ Aric Chan (student # 55019376) Meowee 4
++ Aric Chan (student # 4) Meowee 4
 
 We call ourselves: Burger Pixelizers.
 
