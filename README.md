@@ -11,11 +11,11 @@ This project is in fulfillment of the [CPSC 312 2024W1 project requirements](htt
 Our team is:
 
 + Team Member Name 1 (student # 1): optional awesome nickname 1
-+ Team Member Name 2 (student # 2): optional awesome nickname 2
++ Evan Dien   (student # 2): EP 2
 + Tony Huang  (student # 3): HY 3
 + If you have a fourth member: Team Member Name 4 (student # 4): optional awesome nickname 4
 
-We call ourselves: Team Pixelizers.
+We call ourselves: Burger Pixelizers.
 
 ## Acknowledgments
 
