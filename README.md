@@ -1,18 +1,8 @@
-# CPSC 312 Project
 
-Project Template for CPSC 312 Projects. Use this for both your proposal and final project submission.
+# Video Pixely
 
-(Since you are submitting a link to a specific commit, we will be able to tell the difference.)
-
-The template to edit begins below. You can delete this header section once you've begun.
-
-We will post some additional material to include when you reach the final project stage.
-
-# Insert My Excellent Project Title Here
-
-This will be replaced with a very brief (one paragraph, 2-3 sentences) overview of the project.
-
-Leave the following sentence in so you can easily link back to the requirements and *especially* rubric while editing your project:
+(Overview) This project seeks to build a Haskell module that converts short videos into pixel art. It aims to enrich the Haskell community by providing a fun and artistic tool that can be used in Haskell-based applications, such as Discord bots. Our solution will allow developers to take short clips and transform them into a pixel art style, adding a creative dimension to Haskell's ecosystem.
+This project is in fulfillment of the CPSC 312 2024W1 project requirements.
 
 This project is in fulfillment of the [CPSC 312 2024W1 project requirements](https://steven-wolfman.github.io/cpsc-312-website-2024W1/project.html).
 
@@ -22,19 +12,23 @@ Our team is:
 
 + Team Member Name 1 (student # 1): optional awesome nickname 1
 + Team Member Name 2 (student # 2): optional awesome nickname 2
-+ Team Member Name 3 (student # 3): optional awesome nickname 3
++ Tony Huang  (student # 3): HY 3
 + If you have a fourth member: Team Member Name 4 (student # 4): optional awesome nickname 4
-+ If you have a fifth member: Team Member Name 5 (student # 5): optional awesome nickname 5
 
-We call ourselves: optional awesome team name.
+We call ourselves: Team Pixelizers.
 
 ## Acknowledgments
 
-We surely built on the work of others! Here are resources and people we got support from:
+Acknowledgments
+We want to acknowledge the resources and support that helped shape our project:
 
-+ A list of acknowledgments with a brief explanation of support received, e.g.:
-  "We used Github Copilot extensively to generate first-pass implementations of chunks of the project that we had specified.
-  We then manually adjusted and adapted these to our needs."
+Medium Article on ASCII Art Conversion in Haskell: This article provided initial guidance on manipulating images using Haskell, which was adapted to suit our project’s needs.
+
+CPSC 312 Image Blending Project (2023): We drew inspiration from this previous project, particularly in the way they handled image data within Haskell.
+
+Github Copilot: We used Github Copilot extensively to draft first-pass code for image processing. We then manually fine-tuned the generated code to fit our project’s requirements.
+
+ChatGPT: We used ChatGPT to generate ideas, structure documentation, and get feedback on the overall project workflow and design.
 
 ## Product Pitch
 
@@ -71,36 +65,65 @@ Or:
 
 ## Proof of Concept
 
-Replace this with a description of your proof-of-concept. This may be as short as a few paragraphs, or it may be longer.
-It should **definitely** take less than 4 minutes to read carefully and thoroughly, though working through and running the
-code may take an extra 4 minutes. (Your guidance and links should make it easy for us to work through the code.)
+Our proof-of-concept demonstrates the ability to intake an image and convert it into a black version with the same dimensions, a critical step in the process of converting visuals into pixel art. This task involves reading an image, processing it by adjusting each pixel's rgb values, and outputting the transformed image. Since a video is essentially a series of pictures, we establish the foundation for our ultimate goal of building a Haskell module capable of processing short videos and turning them into pixel art. If we can modify images, then we can also modify videos in the future. 
 
-Tell us:
+Key Element:
+There are two core elements ot our proof-of-concept:
+1. We need to load an image file with the correct type of image.
+    - First, we ask the user to input a filename and path to the program. 
+    https://github.students.cs.ubc.ca/yassersa/cpsc312project/blob/67a4be42e6ac518339847dd907d8e53dfd2df483/haskell/app/Main.hs#L5-L10
+    In the main function we ask for a user input and then that user input will be used as a parameter for the function loadPrintTurnBlackAndSave. 
+   
 
-+ what key element of your project the proof-of-concept focuses on
-+ what makes that such an important element
-+ how completing this gives you confidence that, with sufficient work, you could complete the full (minimal viable) project
+    - in JuicyPixel, the DynamicImage class have lots of different constructors for different image types. Instead of making a case for each image type, we decided to convert every DynamicImage into an RGB8 image. 
 
-Include links (likely even line-level links, which are easy to create in Github) throughout to critical pieces of
-the code to make it easy for us to understand what you've accomplished and how it fulfills the requirements.
+    https://github.students.cs.ubc.ca/yassersa/cpsc312project/blob/67a4be42e6ac518339847dd907d8e53dfd2df483/haskell/src/Lib.hs#L22
+    This line uses a function from the JuicyPixel library to convert all DynamicImages to RGB8
 
-Also include instructions for us to test and run your code. (See our guidelines below.)
+    
+    https://github.students.cs.ubc.ca/yassersa/cpsc312project/blob/67a4be42e6ac518339847dd907d8e53dfd2df483/haskell/src/Lib.hs#L26-L32
+    This link shows the part where we take an input file name from the user and then handles errors as using the Left and Right error handling by using the Either type built into haskell. Left handles errors, right proceeds. 
 
-A good goal to aim for is the top rubric item from proposal grading:
+Why It’s Important:
+    - It's important because we eventually need to load a video file into the program where there might be a lot of file compatability issues. So this is good practice for us. 
 
-> Fully functional proof-of-concept is easy to use and review, and it clearly demonstrates a key element necessary for the overall project.
+2. The image processing step that transforms the image into black with the same dimensions
+
+    - which will be applied frame-by-frame to video files in the final product. This capability is necessary for building the pixel art aesthetic we envision.
+
+    https://github.students.cs.ubc.ca/yassersa/cpsc312project/blob/67a4be42e6ac518339847dd907d8e53dfd2df483/haskell/src/Lib.hs#L54-L56
+    This is the turnToBlack function that changes every pixel's rgb value to 0. 
+
+Why It’s Important:
+    - Ensuring the black with the same dimensions transformation is efficient and accurate allows us to proceed with confidence that more complex tasks like frame extraction from video and pixel manipulation will work as intended. This is a vital step toward completing our minimal viable project (MVP).
+
+Testing this proof-of-concept reassures us that the basic image transformation functions in Haskell can be built upon to handle multiple frames and videos in later stages.
+
 
 ### How to test and run the code: Haskell
 
-Replace this section with instructions to us for how to test and run your code.
+How to Test and Run the Code: Haskell
+Clone the repository and navigate to the Haskell subdirectory:
 
-As it is currently set up, editing works best if you first `cd` into the `haskell` subdirectory and open VS Code on that directory (`code .`). There is a `Makefile` with some helpful aliases, but you can also just use `stack` as normal.
+cd haskell
 
-Note: We expect to be able to test your code by running `stack test`. Included among your tests should be some that demonstrate the core functionality of your code. (We will be running `make haskell-eval` from the project root.)
+Build the project using stack:
 
-We should be able to further explore your code's functionality by running `stack ghci`, and you should instruct us on some interesting cases to try.
+stack build
 
-If you include instructions different from these, be **absolutely sure** that they will work well for us in whatever environment we run your code and that they will be as easy to use as the instructions above!
+This will download all necessary dependencies and compile the project. Please be patient as it might take some time to complete.
+
+
+After the project is built, to run the image processor, input this line in the terminal:
+stack exec image-processor
+
+And then it will ask for a user input of the file name. You can use the existing images in the images folder of the project, or you can place your own images that you want to test into the images folder. 
+
+For example, you can input something like 
+images/bird.png
+
+The output image will be stored as output.png in the output_images folder. You can check and see if the output image is indeed a full black image will the same dimensions as the input image. 
+
 
 ### How to test and run the code: Prolog
 
